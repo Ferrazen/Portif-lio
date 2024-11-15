@@ -19,3 +19,16 @@
 ├── .gitignore
 ├── package.json
 ├── README.md
+
+import React from "react";
+import "./PortfolioCard.css";
+
+const PortfolioCard = ({ title, description, image }) => (
+  <div className="portfolio-card">
+    <img src={image} alt={title} className="portfolio-image" />
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+);
+
+export default PortfolioCard;
